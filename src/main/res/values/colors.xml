@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#0A1B23</color>
+    <color name="heading">#4B6F7F</color>
+    <color name="lt_blue">#95DDFF</color>
+    <color name="med_blue">#49C5FF</color>
+    <color name="dk_blue">#3A9DCC</color>
+    <color name="gray">#CCCCCC</color>
+    
+    <color name="green">#00FF00</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="dk_gray">#666666</color>
+</resources>

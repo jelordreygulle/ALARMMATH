@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:paddingBottom="10dp">
+
+    <!-- Time -->
+    <TextView
+        android:id="@+id/alarmTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/kepad_text_size"
+        android:paddingTop="14dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="5dp"
+        android:textColor="@color/med_blue"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="00:00PM"
+        />
+
+    <!-- Name -->
+    <TextView
+        android:id="@+id/alarmName"
+        android:layout_toRightOf="@id/alarmTime"
+        android:layout_width="160dp"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/heading_text_size"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/gray"
+        android:text="Alarm Name"
+        />
+
+    <!-- Days -->
+    <TextView
+        android:id="@+id/sunday"
+        style="@style/alarm_list_row_days"
+        android:layout_below="@id/alarmName"
+        android:layout_toRightOf="@id/alarmTime"
+        android:text="S"
+        />
+
+    <TextView
+        android:id="@+id/monday"
+        style="@style/alarm_list_row_days"
+        android:layout_toRightOf="@+id/sunday"
+        android:layout_below="@+id/alarmName"
+        android:text="M"
+        />
+
+    <TextView
+        android:id="@+id/tuesday"
+        style="@style/alarm_list_row_days"
+        android:layout_toRightOf="@+id/monday"
+        android:layout_below="@+id/alarmName"
+        android:text="T"
+        />
+
+    <TextView
+        android:id="@+id/wednesday"
+        style="@style/alarm_list_row_days"
+        android:layout_toRightOf="@+id/tuesday"
+        android:layout_below="@+id/alarmName"
+        android:text="W"
+        />
+
+    <TextView
+        android:id="@+id/thursday"
+        style="@style/alarm_list_row_days"
+        android:layout_toRightOf="@+id/wednesday"
+        android:layout_below="@+id/alarmName"
+        android:text="T"
+        />
+
+    <TextView
+        android:id="@+id/friday"
+        style="@style/alarm_list_row_days"
+        android:layout_toRightOf="@+id/thursday"
+        android:layout_below="@+id/alarmName"
+        android:text="F"
+        />
+
+    <TextView
+        android:id="@+id/saturday"
+        style="@style/alarm_list_row_days"
+        android:layout_toRightOf="@+id/friday"
+        android:layout_below="@+id/alarmName"
+        android:text="S"
+        />
+
+    <!-- Enabled -->
+
+    <ToggleButton
+        android:id="@+id/alarmToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBaseline="@+id/alarmTime"
+        android:layout_alignBottom="@+id/alarmTime"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/normal_text_size"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"/>
+
+</RelativeLayout>

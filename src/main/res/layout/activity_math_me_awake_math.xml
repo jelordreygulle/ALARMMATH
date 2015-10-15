@@ -1,0 +1,187 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MathMeAwakeAlarmScreen" >
+
+    <TextView
+        android:id="@+id/alarm_screen_name_header"
+        style="@style/heading"
+        android:layout_weight="10"
+        android:text="default alarm name"
+        android:textSize="@dimen/heading_text_size"
+        android:background="@android:color/black"
+        />
+
+
+    <TextView
+        android:id="@+id/alarm_screen_time"
+        android:text="12:00am"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:textSize="@dimen/time_text_size"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/alarm_screen_status"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textSize="@dimen/kepad_text_size"
+        android:layout_weight="10"
+        android:text="Answer 0 more to disable"/>
+
+    <View
+        android:id="@+id/alarm_screen_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/heading"
+
+        />
+
+    <TextView
+        android:id="@+id/alarm_screen_prompt"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:text="@string/filler"
+        android:textSize="@dimen/kepad_text_size" />
+
+    <TextView
+        android:id="@+id/alarm_screen_input"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:textSize="@dimen/kepad_text_size"
+        android:minHeight="@dimen/kepad_text_size"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_weight="10"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        />
+
+    <TableLayout
+        android:id="@+id/alarm_screen_keypad"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="50"
+        android:background="@color/background"
+        android:paddingTop="5dp" >
+
+        <TableRow
+            android:layout_weight="25">
+
+            <Button
+                android:id="@+id/alarm_screen_btn_7"
+                style="@style/keypad_btn_normal"
+                android:text="@string/seven"
+                android:background="@android:color/white"
+                />
+
+            <Button
+                android:background="@android:color/white"
+                android:id="@+id/alarm_screen_btn_8"
+                style="@style/keypad_btn_normal"
+                android:text="@string/eight"
+                />
+
+            <Button
+                android:id="@+id/alarm_screen_btn_9"
+                style="@style/keypad_btn_normal"
+                android:text="@string/nine"
+                android:background="@android:color/white"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="25">
+
+            <Button
+                android:background="@android:color/white"
+                android:id="@+id/alarm_screen_btn_4"
+                style="@style/keypad_btn_normal"
+                android:text="@string/four"
+
+                />
+
+            <Button
+                android:id="@+id/alarm_screen_btn_5"
+                style="@style/keypad_btn_normal"
+                android:text="@string/five"
+                android:background="@android:color/white"
+                />
+
+            <Button
+                android:id="@+id/alarm_screen_btn_6"
+                style="@style/keypad_btn_normal"
+                android:text="@string/six"
+                android:background="@android:color/white"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="25">
+
+            <Button
+                android:id="@+id/alarm_screen_btn_1"
+                style="@style/keypad_btn_normal"
+                android:text="@string/one"
+                android:background="@android:color/white"
+                />
+
+            <Button
+                android:background="@android:color/white"
+                android:id="@+id/alarm_screen_btn_2"
+                style="@style/keypad_btn_normal"
+                android:text="@string/two"
+                />
+
+            <Button
+                android:background="@android:color/white"
+                android:id="@+id/alarm_screen_btn_3"
+                style="@style/keypad_btn_normal"
+                android:text="@string/three"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="25">
+
+            <Button
+
+                android:id="@+id/alarm_screen_btn_clear"
+                style="@style/keypad_btn_normal"
+                android:text="CLEAR"
+                android:background="@android:color/white"
+                />
+
+            <Button
+                android:background="@android:color/white"
+                android:id="@+id/alarm_screen_btn_0"
+                style="@style/keypad_btn_normal"
+                android:text="@string/zero"
+                />
+
+            <Button
+                android:background="@android:color/white"
+                android:id="@+id/alarm_screen_btn_enter"
+                style="@style/keypad_btn_normal"
+                android:onClick="submit"
+                android:text="OK" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

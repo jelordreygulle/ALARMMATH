@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">32dp</dimen>
+    <dimen name="activity_vertical_margin">32dp</dimen>
+    <dimen name="kepad_text_size">72sp</dimen>
+    <dimen name="time_text_size">150sp</dimen>
+    <dimen name="normal_text_size">42sp</dimen>
+    <dimen name="heading_text_size">50sp</dimen>
+    <dimen name="small_margin">10dp</dimen>
+    
+</resources>

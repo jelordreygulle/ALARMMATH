@@ -1,0 +1,12 @@
+<resources>
+
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="kepad_text_size">32sp</dimen>
+    <dimen name="time_text_size">60sp</dimen>
+    <dimen name="normal_text_size">18sp</dimen>
+    <dimen name="heading_text_size">24sp</dimen>
+    <dimen name="small_margin">10dp</dimen>
+
+</resources>
